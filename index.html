@@ -11,16 +11,19 @@
         margin: 0;
         padding: 0;
     }
+
     body {
         font-family: 'Arial', sans-serif;
         background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
         color: #333;
         line-height: 1.6;
     }
+
     a {
         text-decoration: none;
         color: inherit;
     }
+
     /* Шапка */
     header {
         background-color: rgba(0, 0, 0, 0.6);
@@ -30,6 +33,7 @@
         top: 0;
         z-index: 999;
     }
+
     header .container {
         width: 90%;
         max-width: 1200px;
@@ -39,37 +43,44 @@
         align-items: center;
         flex-wrap: wrap;
     }
+
     header h1 {
         font-size: 28px;
         font-weight: bold;
         letter-spacing: 2px;
     }
+
     nav ul {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
     }
+
     nav ul li {
         font-size: 16px;
         transition: transform 0.3s;
     }
+
     nav ul li a {
         padding: 8px 12px;
         border-radius: 4px;
         transition: background-color 0.3s, color 0.3s;
         font-weight: bold;
     }
+
     nav ul li a:hover {
         background-color: #fff;
         color: #222;
     }
+
     /* Основной блок */
     main {
         padding: 40px 20px;
         max-width: 1200px;
         margin: auto;
     }
+
     /* Блоки секций */
     section {
         background-color: rgba(255, 255, 255, 0.8);
@@ -79,10 +90,12 @@
         box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         transition: transform 0.3s, box-shadow 0.3s;
     }
+
     section:hover {
         transform: translateY(-5px);
         box-shadow: 0 12px 24px rgba(0,0,0,0.3);
     }
+
     /* Заголовки секций */
     h2 {
         font-size: 32px;
@@ -91,7 +104,8 @@
         color: #222;
         position: relative;
     }
-  h2::after {
+
+    h2::after {
         content: "";
         display: block;
         height: 4px;
@@ -100,26 +114,30 @@
         margin: 10px auto 0;
         border-radius: 2px;
     }
- /* Биография и навыки */
+
+    /* Биография и навыки */
     .bio, .skills, .achievements {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
- /* Биография */
+
+    /* Биография */
     .bio p {
         font-size: 18px;
         line-height: 1.5;
         text-align: justify;
     }
-  /* Навыки */
+
+    /* Навыки */
     .skills-list {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
         justify-content: center;
     }
-   .skill {
+
+    .skill {
         background-color: #fff;
         padding: 15px 20px;
         border-radius: 12px;
@@ -128,16 +146,19 @@
         font-weight: bold;
         transition: transform 0.3s, box-shadow 0.3s;
     }
- .skill:hover {
+
+    .skill:hover {
         transform: translateY(-3px);
         box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
- /* Достижения */
+
+    /* Достижения */
     .achievements-list {
         list-style: none;
         padding-left: 0;
     }
- .achievement {
+
+    .achievement {
         background-color: #fff;
         padding: 15px 20px;
         margin-bottom: 15px;
@@ -147,70 +168,82 @@
         align-items: center;
         transition: transform 0.3s, box-shadow 0.3s;
     }
-.achievement:hover {
+
+    .achievement:hover {
         transform: translateY(-3px);
         box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
- .achievement-icon {
+
+    .achievement-icon {
         font-size: 24px;
         margin-right: 15px;
         color: #f4a261;
     }
-/* Портфолио */
+
+    /* Портфолио */
     .portfolio {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
     }
-.portfolio-item {
+
+    .portfolio-item {
         background-color: #fff;
         border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         transition: transform 0.3s, box-shadow 0.3s;
     }
-.portfolio-item:hover {
+
+    .portfolio-item:hover {
         transform: scale(1.05);
         box-shadow: 0 12px 24px rgba(0,0,0,0.2);
     }
- .portfolio-img {
+
+    .portfolio-img {
         width: 100%;
         height: 150px;
         object-fit: cover;
         display: block;
     }
-.portfolio-caption {
+
+    .portfolio-caption {
         padding: 15px;
         font-size: 16px;
         text-align: center;
         font-weight: bold;
         color: #222;
     }
- /* Контакты */
+
+    /* Контакты */
     .contacts {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-.contacts form {
+
+    .contacts form {
         width: 100%;
         max-width: 600px;
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
- .contacts input, .contacts textarea {
+
+    .contacts input, .contacts textarea {
         padding: 15px;
         border-radius: 8px;
         border: 1px solid #ccc;
         font-size: 16px;
         transition: border-color 0.3s;
     }
- .contacts input:focus, .contacts textarea:focus {
+
+    .contacts input:focus, .contacts textarea:focus {
         border-color: #f4a261;
         outline: none;
     }
-  .contacts button {
+
+    .contacts button {
         padding: 15px;
         background-color: #222;
         color: #fff;
@@ -220,16 +253,19 @@
         cursor: pointer;
         transition: background-color 0.3s;
     }
-          .contacts button:hover {
+
+    .contacts button:hover {
         background-color: #f4a261;
     }
+
     /* Футер */
     footer {
         background-color: rgba(0,0,0,0.6);
         color: #fff;
         padding: 30px 20px;
     }
-       footer .container {
+
+    footer .container {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -237,9 +273,11 @@
         margin: auto;
         gap: 20px;
     }
-      footer p {
+
+    footer p {
         font-size: 14px;
     }
+
     /* Мобильная адаптация */
     @media(max-width: 768px){
         header .container {
@@ -264,6 +302,7 @@
 </style>
 </head>
 <body>
+
 <!-- Шапка сайта -->
 <header>
     <div class="container">
@@ -279,8 +318,10 @@
         </nav>
     </div>
 </header>
+
 <!-- Основной контент -->
 <main>
+
 <!-- Раздел: Обо мне -->
 <section id="about-me">
 <h2>Обо мне</h2>
@@ -293,6 +334,7 @@
     </p>
 </div>
 </section>
+
 <!-- Раздел: Навыки -->
 <section id="skills">
 <h2>Мои навыки</h2>
@@ -311,6 +353,7 @@
     </div>
 </div>
 </section>
+
 <!-- Раздел: Достижения -->
 <section id="achievements">
 <h2>Мои достижения</h2>
@@ -337,6 +380,7 @@
     </li>
 </ul>
 </section>
+
 <!-- Раздел: Портфолио -->
 <section id="portfolio-section">
 <h2>Мое портфолио</h2>
@@ -363,6 +407,7 @@
     </div>
 </div>
 </section>
+
 <!-- Раздел: Контакты -->
 <section id="contacts-section">
 <h2>Связаться со мной</h2>
@@ -375,12 +420,14 @@
     </form>
 </div>
 </section>
+
 </main>
+
 <!-- Футер -->
 <footer>
 <div class="container">
     <p>&copy; 2024 Ваше Имя. Все права защищены.</p>
-    <p>Телефон: +7 (999) 123-45-67 | Email: your.email@example.com</p>
+    <p>Телефон: +7 (999) 123-45-67 | Email: Likeelunatik@gmail.com</p>
     <div style="margin-top:10px;">
         <a href="#" style="margin-right:10px; color:#f4a261;">Вконтакте</a>
         <a href="#" style="margin-right:10px; color:#f4a261;">LinkedIn</a>
@@ -388,6 +435,7 @@
     </div>
 </div>
 </footer>
+
 <!-- Скрипты для формы -->
 <script>
     document.getElementById('contact-form').addEventListener('submit', function(e){
@@ -396,5 +444,6 @@
         this.reset();
     });
 </script>
+
 </body>
 </html>
